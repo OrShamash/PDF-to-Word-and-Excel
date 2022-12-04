@@ -1,11 +1,11 @@
 from pathlib import Path
 import win32com.client as win32com
 #create an empty folder in desktop.
-#The name of the folder is not importent.
+#The name of the folder is not important.
 #If you get 000000000046x0x1x9 exception, 
 #delete the folder and create new one with diffrent name.
 
-gen_py_path = r'C:\Users\orish\Desktop\ABC'
+gen_py_path = r'C:\Users\orish\Desktop\ABC' #<======== Change this
 Path(gen_py_path).mkdir(parents=True, exist_ok=True)
 win32com.__gen_path__ = gen_py_path
 
@@ -15,11 +15,11 @@ from openpyxl import Workbook
 
 
 
-macro_file_path = r"C:\Users\orish\Desktop\5.xlsx"
+macro_file_path = r"C:\Users\orish\Desktop\5.xlsx" #<======== Change this
 
-pdf_path = r"C:\Users\orish\Desktop\5.pdf"
+pdf_path = r"C:\Users\orish\Desktop\5.pdf" #<======== Change this
 
-docx_path = r"C:\Users\orish\Desktop\5.docx"
+docx_path = r"C:\Users\orish\Desktop\5.docx" #<======== Change this
 
 powershell_script_text = (f'$filePath = "{pdf_path}"\n'\
                            f"    $wd = New-Object -ComObject Word.Application\n"\
